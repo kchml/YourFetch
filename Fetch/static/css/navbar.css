@@ -1,0 +1,17 @@
+.branding-logo, .branding-logo:hover, .branding-logo:focus, .branding-logo:active{
+    font-size: 25px;
+    color: rgb(234, 235, 243);
+    margin-left: 30px;
+    text-decoration: none;
+    touch-action: none;
+    transition: none;
+}
+.name-user{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 30px;
+} 
+
+.name-user:hover {
+    color: #fff
+}

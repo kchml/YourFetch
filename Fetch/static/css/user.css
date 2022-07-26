@@ -1,0 +1,42 @@
+.titleoffeed{
+
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}
+.listoffeed{
+    margin: auto;
+    width: 80%;
+    background-color:#f7f7f7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+	flex-direction: column;
+}
+.generallist{
+
+    margin: auto;
+    margin-top: 3%;
+    width: 60%;
+    background-color: #f7f7f7;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.textfeed{
+
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    line-height: 30px;
+    margin: 10px; 
+    text-align: middle;
+    font-weight: 500;
+}
+.feed_buttons{
+    text-align: right;
+}

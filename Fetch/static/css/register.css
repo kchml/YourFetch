@@ -1,0 +1,48 @@
+.user_card_register_page {
+		width: 350px;
+		margin-top: 200px;
+		margin-bottom: auto;
+		background: #f7f7f7;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 5px;
+
+}
+
+.form_container_register_page {
+		margin-top: 30px;
+}
+
+#form-title-register-page{
+	color: #000;
+}
+.login_btn_register_page {
+	width: 100%;
+	background: rgb(27, 21, 21) !important;
+	color: white !important;
+}
+.login_btn_register_page:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+.login_container_register_page {
+	padding: 0 2rem;
+}
+.input-group-text-register-page {
+	background: rgb(27, 21, 21) !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+	min-width: 25px;
+}
+.input_user,
+.input_pass:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}

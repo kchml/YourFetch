@@ -1,0 +1,59 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<main role="main" class="container">
+    {% for message in messages %}
+    <p id="messages_login_page"> {{message}} </p>
+    {% endfor %}
+
+    <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+
+        {% for item in items %}
+
+            <div class="media text-muted pt-3">
+                {% if item.image is None %}
+                    <img src="{% static "images/picture_no_available.jpg" %}" alt="" class="mr-2 rounded" width="128" height="72">
+                {% else %}
+                <img src="{{item.image}}" alt="" class="mr-2 rounded" width="128" height="72">
+                {% endif %}
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">
+                        {% if item.title is None %}
+                        No title
+                        {% else %}
+                        {{item.title}}
+                        {% endif %}
+                    </strong>
+                    {% if item.title is None %}
+                    No description
+                    {% else %}
+                    {{item.description}}
+                    {% endif %}
+
+                    <br>
+                        <em>
+                            {% if item.directlink is None %}
+                            No link
+                            {% else %}
+                            <a href="{{item.directlink}}">Link to whole article</a>
+                            {% endif %}
+
+                        </em>
+                    </br>
+                </p>
+            </div>
+        {% endfor %}
+
+
+        <small class="d-block text-right mt-3">
+            <a href="#">All updates</a>
+        </small>
+    </div>
+
+  </main>
+
+{% endblock %}
