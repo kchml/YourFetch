@@ -25,7 +25,25 @@ Clone repository:
 $ git clone https://github.com/kchml/YourFetch
 ```
 
-Next go to directory with file manage.py and after installing all libraries listed in requirments.txt input in console:
+Then using powershell go to directory with requirements.txt and install all libraries listed in it, f.e.:
+
+```
+$ pip install -r requirements.txt
+```
+
+Next go to directory with file manage.py and input in console:
+
+```
+$ python manage.py runserver
+```
+
+After that quit the server to migrate files using:
+
+```
+$ python manage.py migrate
+```
+
+Now you can input again:
 
 ```
 $ python manage.py runserver
