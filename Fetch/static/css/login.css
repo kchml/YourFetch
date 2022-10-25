@@ -49,10 +49,12 @@
 }
 
 #messages_login_page{
-	background-color: rgb(145, 28, 28);
+	background-color: rgb(24, 32, 48);
 	color: #fff;
 	padding: 10px;
 	margin-top: 10px;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
 }
 
 #image-login-password {
