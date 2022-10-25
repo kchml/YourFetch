@@ -21,6 +21,8 @@
 
 #form-title-register-page{
 	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
 }
 .login_btn_register_page {
 	width: 100%;

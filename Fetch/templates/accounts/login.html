@@ -13,13 +13,13 @@
 						{% csrf_token %}
 						<div class="input-group mb-3">
 							<div class="input-group-append">
-								<span class="input-group-text-login-page"><i class="fas fa-user"></i></span>
+								<span class="input-group-text-login-page"><span class="image-login"><i id="image-login-password" class="fas fa-user"></i></span></span>
 							</div>
 							{{form.email}}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text-login-page"><i class="fas fa-key"></i></span>
+								<span class="input-group-text-login-page"><span class="image-login"><i id="image-login-password" class="fas fa-key"></i></span></span>
 							</div>
 							{{form.password}}
 						</div>
@@ -36,7 +36,7 @@
 
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="{% url 'register' %}" class="ml-2">Sign Up</a>
+						<span class="text-about-account" >Don't have an account?<a href="{% url 'register' %}" class="ml-2">Sign Up</a></span>
 					</div>
 
 				</div>

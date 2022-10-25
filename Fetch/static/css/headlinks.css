@@ -2,14 +2,13 @@ body{
     margin:0;
     padding:0;
     height:100%;
-    background-color: #f7f7f7 
+    background-color: #b9b8b8 
 }
 html
     {
         margin: 0;
         padding: 0;
         height: 0;
-        background-color: #f7f7f7 !important;
         min-height: 100%;
         display: flex;
         flex-direction: column;
@@ -25,8 +24,7 @@ box-shadow: none;
 }
 
 footer{
-    background-color: #292b2c;
-    color: #292b2c;
+    background-color: #2d3d46;
     width: 100%;
     bottom: 0;
     text-align: center;

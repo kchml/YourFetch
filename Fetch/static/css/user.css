@@ -1,5 +1,4 @@
 .titleoffeed{
-
     margin: auto;
     width: 80%;
     padding: 10px;
@@ -37,6 +36,7 @@
     text-align: middle;
     font-weight: 500;
 }
+
 .feed_buttons{
     text-align: right;
 }

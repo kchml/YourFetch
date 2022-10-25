@@ -6,6 +6,7 @@
     margin: 10px; 
     text-align: middle;
     font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 .search_box {
     width: 1000px;
@@ -43,6 +44,4 @@
 }
 .footer_class{
     position: absolute;
-
-
 }

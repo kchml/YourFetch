@@ -1,6 +1,6 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: #292b2c;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: #2d3d46;">
     <span><a class="branding-logo" href="{% url 'home' %}"> YourFetch </a></span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -15,9 +15,9 @@
 
     {% if user.is_authenticated %}
 
-        <span><a class="name-user" href="{% url 'all_items_list' %}">Latest Items</a></span>
-        <span><a class="name-user" href="{% url 'user_feeds' %}">All Followed Sites</a></span>
-        <span><a class="name-user" href="{% url 'logout' %}">Logout</a></span>
+        <span><a class="navbar-option" href="{% url 'all_items_list' %}">Latest Items</a></span>
+        <span><a class="navbar-option" href="{% url 'user_feeds' %}">All Followed Sites</a></span>
+        <span><a class="navbar-option" href="{% url 'logout' %}">Logout</a></span>
 
     {% endif %}
 

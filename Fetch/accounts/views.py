@@ -54,6 +54,8 @@ def register_page(request):
             email = form.cleaned_data.get('email')
             messages.success(request, 'Account was created for ' + email)
             return redirect('login')
+        else:
+            messages.warning(request, 'You have made mistake, try again!')
 
     context = {'form': form}
 

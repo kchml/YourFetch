@@ -14,30 +14,32 @@
 						{% csrf_token %}
 						<div class="input-group mb-3">
 							<div class="input-group-append">
-								<span class="input-group-text-register-page"><i class="fas fa-user"></i></span>
+								<span class="input-group-text-register-page"><i id="image-login-password" class="fas fa-user"></i></span>
 							</div>
 							{{form.username}}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text-register-page"><i class="fas fa-envelope-square"></i></span>
+								<span class="input-group-text-register-page"><i id="image-login-password" class="fas fa-envelope-square"></i></span>
 							</div>
 							{{form.email}}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text-register-page"><i class="fas fa-key"></i></span>
+								<span class="input-group-text-register-page"><i id="image-login-password" class="fas fa-key"></i></span>
 							</div>
 							{{form.password1}}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text-register-page"><i class="fas fa-key"></i></span>
+								<span class="input-group-text-register-page"><i id="image-login-password" class="fas fa-key"></i></span>
 							</div>
 							{{form.password2}}
 						</div>
 
-
+						{% for message in messages %}
+						<p id="messages_login_page"> {{message}} </p>
+						{% endfor %}
 
 				   		<div class="d-flex justify-content-center mt-3 login_container_register_page">
 				 			<input class="btn login_btn_register_page" type="submit" value="Register Account">
@@ -46,11 +48,9 @@
 					</form>
 				</div>
 
-				{{form.errors}}
-
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Already have an account? <a href="{% url 'login' %}" class="ml-2">Login</a>
+						<span class="text-about-account" >Already have an account?<a href="{% url 'login' %}" class="ml-2">Login</a></span>
 					</div>
 				</div>
 			</div>
